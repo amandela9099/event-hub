@@ -1,7 +1,7 @@
-import { Redirect } from 'expo-router';
+import { Slot } from 'expo-router';
 
-// This legacy route group is replaced by (student), (faculty), (admin) layouts.
-// Redirect any stray traffic to the root which handles auth.
+// Legacy route group — kept to satisfy file-based routing.
+// Individual screens under (tabs)/ redirect to root.
 export default function LegacyTabsLayout() {
-  return <Redirect href="/" />;
+  return <Slot />;
 }

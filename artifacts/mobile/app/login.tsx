@@ -52,6 +52,9 @@ export default function LoginScreen() {
     if (!result.success) {
       Alert.alert('Login Failed', result.error || 'Invalid credentials');
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+    } else {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      router.replace('/');
     }
   };
 
