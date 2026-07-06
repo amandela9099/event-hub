@@ -54,7 +54,9 @@ export default function LoginScreen() {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
     } else {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      router.replace('/');
+      if (result.role === 'student') router.replace('/(student)/');
+      else if (result.role === 'faculty') router.replace('/(faculty)/');
+      else router.replace('/(admin)/');
     }
   };
 

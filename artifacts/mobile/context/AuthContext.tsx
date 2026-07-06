@@ -6,7 +6,7 @@ import { User, UserRole } from '../constants/types';
 interface AuthContextType {
   user: User | null;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<{ success: boolean; error?: string }>;
+  login: (email: string, password: string) => Promise<{ success: boolean; role?: UserRole; error?: string }>;
   register: (data: Partial<User> & { password: string }) => Promise<{ success: boolean; error?: string }>;
   logout: () => Promise<void>;
   updateProfile: (updates: Partial<User>) => Promise<void>;
@@ -53,7 +53,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (!found) return { success: false, error: 'Invalid email or password' };
     await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(found));
     setUser(found);
-    return { success: true };
+    return { success: true, role: found.role };
   }, []);
 
   const register = useCallback(async (data: Partial<User> & { password: string }) => {
