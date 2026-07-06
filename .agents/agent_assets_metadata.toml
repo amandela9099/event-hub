@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "4EJeGrtEEEwbJetslQHQT"
+uri = "file://artifacts/mobile/assets/images/icon.png"
+type = "image"
+title = "eventhub app icon"
+
+[[generated]]
+id = "nKEzZtrNKd9KTZdcZz2r7"
+uri = "file://artifacts/mobile/assets/images/hero-banner.png"
+type = "image"
+title = "event hero banner"
+
+[[generated]]
+id = "PBhdv3GQcUnw3Ni6_hPXb"
+uri = "file://artifacts/mobile/assets/images/event-tech.png"
+type = "image"
+title = "tech event banner"

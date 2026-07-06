@@ -1,0 +1,39 @@
+AI Prompt – EventHub College Event Management App
+
+Prompt:
+
+Create a modern, professional, and fully responsive College Event Management Application named EventHub using React Native for the frontend and Java (Spring Boot) with MySQL for the backend. The application should have a clean Material Design UI with smooth animations, rounded cards, blue and purple gradients, and support both Light and Dark themes.
+
+The app should include three user roles: Student, Faculty, and Admin, each with secure login and role-based access.
+
+Students should be able to browse upcoming events, view event details, register online, receive a unique QR code after registration, check their registered events, download digital certificates after attendance, submit event feedback, receive real-time notifications, manage their profile, and view attendance history.
+
+Faculty should be able to create and manage events, view registered participants, scan QR codes for attendance, upload event images, issue certificates, view feedback, and send announcements.
+
+Admin should have a dashboard displaying total users, events, registrations, attendance statistics, certificates issued, and feedback reports. Admin can manage users, events, registrations, notifications, certificates, and generate reports in PDF or CSV format.
+
+The application should automatically generate QR tickets after registration, verify attendance using QR scanning, generate certificates after successful attendance, and send push notifications for registrations, reminders, schedule changes, and certificate availability.
+
+The frontend should use React Navigation, Context API or Redux Toolkit, Axios, React Native Paper, and a QR Code Scanner. The backend should use Java 21, Spring Boot, Spring Security, JWT Authentication, Hibernate/JPA, REST APIs, and MySQL.
+
+The app should include the following screens:
+
+Splash Screen
+Login & Register
+Forgot Password
+Home Dashboard
+Event List
+Event Details
+Registration Confirmation
+QR Ticket
+QR Scanner
+My Events
+Certificates
+Feedback
+Notifications
+Profile
+Admin Dashboard
+Faculty Dashboard
+Settings
+
+Use a modular folder structure, reusable components, clean code architecture, proper validation, error handling, secure authentication, responsive layouts, and professional UI/UX suitable for a real college event management application.
