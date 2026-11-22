@@ -67,6 +67,6 @@ function ClassicTabLayout() {
 }
 
 export default function AdminTabLayout() {
-  if (isLiquidGlassAvailable()) return <NativeTabLayout />;
+  if (Platform.OS === 'ios' && isLiquidGlassAvailable()) return <NativeTabLayout />;
   return <ClassicTabLayout />;
 }
